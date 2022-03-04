@@ -1,0 +1,142 @@
+//====================================================================================================
+
+// .header {
+// 	&__container {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		min-height: rem(80);
+// 	}
+
+// 	&__logo {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+
+// 	&__menu {}
+// }
+
+// .menu {
+
+// 	&__body {
+
+// 		@media (max-width: $mobile) {
+// 			position: fixed;
+// 			padding: rem(90) 0px rem(30) 0px;
+// 			width: 100%;
+// 			height: 100%;
+// 			top: -100%;
+// 			left: 0;
+// 			// left: -100%;
+// 			overflow: auto;
+// 			transition: top 0.3s ease 0s;
+
+// 			// Плашка для мобильного меню
+// 			&::before {
+// 				content: '';
+// 				top: 0;
+// 				position: fixed;
+// 				width: 100%;
+// 				// left: -100%;
+// 				height: rem(80);
+// 				background-color: #fff;
+// 			}
+
+// 			.menu-open & {
+// 				left: 0;
+// 				top: 0;
+
+// 				&::before {
+// 					// left: 0;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	&__list {
+
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		flex-wrap: wrap;
+
+// 		@media (max-width: $mobile) {
+// 			flex-direction: column;
+// 		}
+// 	}
+
+// 	&__item {
+// 		&:not(:last-child) {
+// 			margin: 0px rem(40) 0px 0px;
+// 		}
+
+// 		@media (max-width: $mobile) {
+// 			&:not(:last-child) {
+// 				margin: 0px 0px rem(40) 0px;
+// 			}
+// 		}
+// 	}
+
+// 	&__link {
+// 		@media (max-width:$mobileSmall){
+// 			 font-size: rem(40); 
+// 		}
+// 	}
+// }
+
+//====================================================================================================
+
+//Burger
+
+// .icon-menu {
+// 	display: none;
+
+// 	@media (max-width: $mobile) {
+// 		display: block;
+// 		position: relative;
+// 		width: 30px;
+// 		height: 18px;
+// 		cursor: pointer;
+// 		z-index: 5;
+
+// 		span,
+// 		&::before,
+// 		&::after {
+// 			content: "";
+// 			transition: all 0.3s ease 0s;
+// 			left: 0px;
+// 			position: absolute;
+// 			width: 100%;
+// 			height: 2px;
+// 			background-color: #000;
+// 		}
+
+// 		&::before {
+// 			top: 0px;
+// 		}
+
+// 		&::after {
+// 			bottom: 0px;
+// 		}
+
+// 		span {
+// 			top: calc(50% - 1px);
+// 		}
+
+// 		.menu-open & {
+// 			span {
+// 				transform: scale(0);
+// 			}
+
+// 			&::before {
+// 				transform: rotate(-45deg);
+// 				top: calc(50% - 1px);
+// 			}
+
+// 			&::after {
+// 				transform: rotate(45deg);
+// 				bottom: calc(50% - 1px);
+// 			}
+// 		}
+// 	}
+// }

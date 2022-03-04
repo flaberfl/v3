@@ -1,0 +1,16 @@
+logs/
+**/node_modules/
+**/.DS_Store
+*/.DS_Store
+*.aux
+*.log
+*.pickle
+*.db
+*.rdb
+*.pid
+*.toc
+*.out
+*.pickle
+venv/
+dist/
+.DS_Store
