@@ -51,6 +51,28 @@ export function pageNavigation() {
 	}
 }
 // Работа с шапкой при скроле
+// Добавляет класс при прокручивании на xxx, data-scroll="xxx"
+/*
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  &._header-scroll {
+    position: fixed;
+    top: -200%;
+    background-color: rgba(13, 13, 51, .9);
+  }
+
+  &._header-show {
+    transition: top 0.3s ease 0s;
+    top: 0;
+  }
+
+	._header-scroll & // На всякий случай можно применять чайлдам
+	*/
+	
 export function headerScroll() {
 	addWindowScrollEvent = true;
 	const header = document.querySelector('header.header');
