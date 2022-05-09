@@ -11,13 +11,23 @@
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,500&display=swap);
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "";
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: "Raleway", serif;
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
 $mainColor: #000; // Цвет шрифта по умолчанию
+
+$imp-text-color: #c770f0;
+$header-menu-bg-pc: #1b1a2ea9;
+$header-menu-bg-mob: #181a27;
+
+$body-gradient: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+$image-gradient: linear-gradient(to bottom left,
+	rgba(17, 16, 16, 0.678),
+	rgba(12, 10, 22, 0.863));
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -25,7 +35,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1290;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -36,7 +46,7 @@ $containerPadding: 30;
 $responsiveType: 1;
 
 // Ширина страбатывания первого брейкпоинта
-$containerWidth: $maxWidthContainer + $containerPadding;
+$containerWidth: $maxWidthContainer+$containerPadding;
 
 // Брейк-поинты
 $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
@@ -48,30 +58,50 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+	background-image: $body-gradient;
+	
+
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
 		touch-action: none;
 	}
+
 	// Сайт загружен
-	.loaded & {
-	}
+	.loaded & {}
 }
+
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+
 	// Прижимаем footer
-	> main {
+	>main {
 		flex: 1 1 auto;
 	}
+
 	// Фикс для слайдеров
-	> * {
+	>* {
 		min-width: 0;
 	}
 }
+
+#tsparticles {
+	position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
 
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
@@ -82,6 +112,7 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
+
 	// Отзывчивая
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
@@ -89,30 +120,41 @@ body {
 			box-sizing: content-box;
 			margin: 0 auto;
 		}
+
 		@if ($containerPadding>0) {
 			padding: 0 rem(math.div($containerPadding, 2));
 		}
 	}
-} @else {
+}
+
+@else {
+
 	// По брейк-поинтам
 	[class*="__container"] {
 		margin: 0 auto;
+
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
 			box-sizing: content-box;
-		} @else {
+		}
+
+		@else {
 			@if ($containerPadding>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
 			}
 		}
+
 		@media (max-width: $pc) {
 			max-width: rem(970);
 		}
+
 		@media (max-width: $tablet) {
 			max-width: rem(750);
 		}
+
 		@media (max-width: $mobile) {
 			max-width: none;
+
 			@if ($containerPadding>0 and $maxWidthContainer>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
 			}

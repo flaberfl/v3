@@ -1,3 +1,10 @@
 //====================================================================================================
-
+.home {
+    position: relative;
+    z-index: -1;
+    background-image: $image-gradient, url(@img/home-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 //====================================================================================================
