@@ -158,8 +158,10 @@
 
     @media (any-hover: hover) {
       &:hover {
-        box-shadow: 0 5px 15px #87209e;
-        text-shadow: 0 0 2px #87209e;
+        &::after {
+          box-shadow: 0 5px 15px #87209e;
+          text-shadow: 0 0 2px #87209e;
+        }
 
         &::after {
           width: 100%;
