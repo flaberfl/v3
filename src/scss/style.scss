@@ -14,7 +14,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:regular,500&display=swap);
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Raleway", serif;
+$fontFamily: "Raleway",
+serif;
 $fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -63,7 +64,6 @@ body {
 	line-height: 1.5;
 	color: #fff;
 	background-image: $body-gradient;
-	
 
 	// Скролл заблокирован
 	.lock & {
@@ -99,7 +99,7 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
+	// z-index: 100;
 }
 
 
