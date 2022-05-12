@@ -96,10 +96,10 @@ body {
 	}
 }
 
-.page {
-	position: relative;
-	z-index: 11;
-}
+// .page {
+// 	position: relative;
+// 	z-index: 11;
+// }
 
 #tsparticles {
 	position: fixed;
@@ -107,7 +107,7 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: -1;
 }
 
 
