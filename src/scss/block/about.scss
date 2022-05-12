@@ -1,0 +1,63 @@
+.about {
+  padding: 163px 0px 0px 0px;
+
+  /* .about__container */
+  &__container {}
+
+  /* .about__body */
+  &__body {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  /* .about__content */
+  &__content {
+    flex: 0 1 65%;
+    // padding: 0px 0px 0px 40px;
+  }
+  
+  /* .about__title */
+  &__title {
+    margin: 0px 0px 53px 0px;
+
+    font-size: 2.6em;
+    text-align: center;
+  }
+
+  /* .about__text */
+  &__text {
+    font-size: 1.2em;
+
+    p {}
+  }
+
+  /* .about__image */
+  &__image {
+    margin: 0 auto;
+  }
+
+  /* .about__social */
+  &__social {}
+}
+
+.social {
+
+  /* .social__title */
+  &__title {}
+
+  /* .social__subtitle */
+  &__subtitle {}
+
+  /* .social__list */
+  &__list {}
+
+  /* .social__item */
+  &__item {}
+
+  /* .social__link */
+  &__link {}
+
+  /* .social__icon */
+  &__icon {}
+}
