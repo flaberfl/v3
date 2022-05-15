@@ -1,3 +1,46 @@
 //====================================================================================================
 
+.footer {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 8px 0px;
+
+  background-color: rgb(10, 4, 22);
+
+  /* .footer__container */
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .footer__designer */
+  &__designer {}
+
+  /* .footer__social */
+  &__social {}
+}
+
+.copyright {}
+
+.social-footer {
+  display: flex;
+  gap: 30px;
+
+  /* .social-footer__item */
+  &__item {}
+
+  /* .social-footer__link */
+  &__link {
+    display: inline-block;
+  }
+}
+
+.social {
+
+  /* .social__icon */
+  &__icon {}
+}
+
+
 //====================================================================================================
