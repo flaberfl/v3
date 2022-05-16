@@ -1,0 +1,54 @@
+.page {
+
+  /* .page__operation */
+  &__operation {}
+}
+
+.operation {
+  @include adaptiveValue("padding-top", 163, 40);
+  @include adaptiveValue("padding-bottom", 86, 50);
+  background: $section-background-color;
+
+  /* .operation__container */
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:$mobile){
+       flex-direction: column;
+      //  align-items: stretch;
+    }
+  }
+
+  /* .operation__content */
+  &__content {
+    max-width: 700px;
+    padding: 0px 30px 0px 0px;
+  }
+
+  /* .operation__title */
+  &__title {
+    margin: 0px 0px 44px 0px;
+
+    font-size: 2.1em;
+  }
+
+  /* .operation__text */
+  &__text {
+    font-size: 1.25em;
+  }
+
+  /* .operation__image */
+  &__image-ibg {
+    // margin: 0 auto;
+
+    // flex: 0 1 41%;
+    @media (min-width:$mobile){
+      
+      padding: 0px 0px 28% 0px;
+      flex: 0 0 35%;
+      
+    }
+
+  }
+}

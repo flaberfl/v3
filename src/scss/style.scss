@@ -27,7 +27,6 @@ $header-menu-bg-mob: #181a27;
 
 $section-background-color: linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904));
 
-
 $body-gradient: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 $image-gradient: linear-gradient(to bottom left,
 	rgba(17, 16, 16, 0.678),
@@ -173,3 +172,4 @@ body {
 // Подключение стилей отдельных страниц
 @import "home";
 @import "block/about";
+@import "block/operation";
