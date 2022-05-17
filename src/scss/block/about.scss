@@ -9,7 +9,7 @@
   &__body {
     display: flex;
     align-items: center;
-    margin: 0px 0px 57px 0px;
+    margin: 0px 0px rem(57) 0px;
 
     @media (max-width:$mobile){
        flex-direction: column; 
@@ -21,13 +21,13 @@
     flex: 0 1 65%;
 
     @media (max-width:$mobile){
-       margin: 0px 0px 30px 0px; 
+       margin: 0px 0px rem(30) 0px; 
     }
   }
 
   /* .about__title */
   &__title {
-    margin: 0px 0px 53px 0px;
+    margin: 0px 0px rem(53) 0px;
   }
 
   /* .about__text */
@@ -38,7 +38,7 @@
       letter-spacing: .1px;
 
       &:not(:last-child) {
-        margin: 0px 0px 28px 0px;
+        margin: 0px 0px rem(28) 0px;
       }
     }
   }
@@ -63,7 +63,7 @@
 
   /* .social__subtitle */
   &__subtitle {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px rem(30) 0px;
   }
 
   /* .social__list */
@@ -72,7 +72,7 @@
   /* .social__item */
   &__item {
     display: inline-block;
-    padding: 0px 13px;
+    padding: 0px rem(13);
   }
 
   /* .social__link */
@@ -81,8 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: rem(40);
+    height: rem(40);
 
     font-size: 1.2em;
     color: #700c86;
