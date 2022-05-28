@@ -1,9 +1,3 @@
-.page {
-
-  /* .page__operation */
-  &__operation {}
-}
-
 .operation {
   @include adaptiveValue("padding-top", 120, 40);
   @include adaptiveValue("padding-bottom", 86, 50);
@@ -13,8 +7,8 @@
   &__container {
     display: flex;
     align-items: center;
-    
-    @media (max-width:$mobile){
+
+    @media (max-width:$mobile) {
       flex-direction: column;
       gap: 50px;
     }
@@ -23,12 +17,10 @@
   /* .operation__content */
   &__content {
     flex: 1 1 53.030%;
-    // max-width: 700px;
-    // padding: 0px 40px 0px 0px;
     @include adaptiveValue("padding-right", 40, 0);
 
-    @media (max-width:$mobile){
-       padding: 0;
+    @media (max-width:$mobile) {
+      padding: 0;
     }
   }
 
@@ -45,16 +37,6 @@
   }
 
   /* .operation__image */
-  // &__image-ibg {
-
-  //   @media (min-width:$mobile){
-      
-  //     padding: 0px 0px 28% 0px;
-  //     flex: 0 0 35%;
-      
-  //   }
-
-  // }
 
   &__image {
     flex: 1 1 34.090%;
