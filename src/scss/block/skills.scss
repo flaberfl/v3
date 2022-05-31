@@ -1,5 +1,6 @@
 .skills {
-  padding: 80px 0px 0px 0px;
+  @include adaptiveValue("padding-top", 80, 10);
+  @include adaptiveValue("padding-bottom", 80, 10);
   background: $section-background-color-revers;
 
   /* .skills__container */
@@ -13,36 +14,8 @@
   }
 
   /* .skills__body */
-  &__body {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    // gap: 30px;
-    @include adaptiveValue("gap", 30, 10);
-    padding: 0px 35px;
-  }
+  &__body {}
 
   /* .skills__icon */
-  &__icon {
-    display: grid;
-    place-items: center;
-    height: 131px;
-
-    border-radius: 5px;
-    border: 1.7px solid rgba(200, 137, 230, .637);
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137);
-    opacity: .93;
-    overflow: hidden;
-
-    font-size: 4.5em;
-    text-align: center;
-    transition: all .4s ease 0s;
-
-    @media (any-hover: hover) {
-      &:hover {
-        overflow: hidden;
-        border: 2.2px solid rgba(197, 115, 230, .883);
-        transform: scale(1.05);
-      }
-    }
-  }
+  &__icon {}
 }

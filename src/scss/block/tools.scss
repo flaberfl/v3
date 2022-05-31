@@ -1,0 +1,22 @@
+.tools {
+  @include adaptiveValue("padding-top", 40, 10);
+  @include adaptiveValue("padding-bottom", 40, 10);
+  background: $section-background-color;
+
+  /* .tools__container */
+  &__container {}
+
+  /* .tools__title */
+  &__title {
+    margin: 0px 0px 17px 0px;
+
+    font-size: 2.3em;
+    font-weight: 500;
+  }
+
+  /* .tools__body */
+  &__body {}
+
+  /* .tools__icon */
+  &__icon {}
+}

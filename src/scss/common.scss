@@ -61,3 +61,35 @@ i {
 .purple {
   color: $imp-text-color;
 }
+
+.body-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  @include adaptiveValue("gap", 30, 10);
+  padding: 0px 35px;
+}
+
+/* .skills__icon */
+.icon-grid {
+  display: grid;
+  place-items: center;
+  height: 131px;
+
+  border-radius: 5px;
+  border: 1.7px solid rgba(200, 137, 230, .637);
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137);
+  opacity: .93;
+  overflow: hidden;
+
+  font-size: 4.5em;
+  text-align: center;
+  transition: all .4s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      overflow: hidden;
+      border: 2.2px solid rgba(197, 115, 230, .883);
+      transform: scale(1.05);
+    }
+  }
+}
