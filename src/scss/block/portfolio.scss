@@ -27,12 +27,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 30px;
-
-
-
-    // @include adaptiveValue("row-gap", 90, 20);
-    // @include adaptiveValue("column-gap", 50, 20);
+    padding-bottom: 50px;
 
     @media (max-width:$tablet) {
       grid-template-columns: repeat(2, 1fr);
@@ -41,15 +36,19 @@
 
   /* .portfolio__project */
   &__project {}
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 0px 5px 0px;
+  }
 }
 
 .project {
-  position: relative;
-  z-index: 100;
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  // height: 100%;
 
   word-wrap: break-word;
   overflow: hidden;
@@ -67,7 +66,6 @@
       transform: scale(1.02);
     }
   }
-
 
   /* .project__image */
   &__image {
@@ -114,4 +112,23 @@
       }
     }
   }
+}
+
+// Пагинация для проектов
+
+.swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid $imp-text-color;
+  cursor: pointer;
+  // $imp-text-color
+  // background-color: $bg-btn;
+  // background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $bg-btn-hv;
+
+  box-shadow: 0 0 5px #c770f0;
 }

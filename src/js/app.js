@@ -160,7 +160,7 @@ import "./files/sliders.js";
 import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
 flsScroll.headerScroll();

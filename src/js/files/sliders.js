@@ -72,8 +72,9 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.portfolio__paginataion',
+				el: '.portfolio__pagination',
 				clickable: true,
+				// dynamicBullets: true,
 			},
 
 			// Arrows
