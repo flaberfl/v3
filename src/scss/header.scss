@@ -176,22 +176,12 @@
     margin: 0px 5px 0px 0px;
   }
 
-  &__btns {
-    display: inline-flex;
-    align-items: center;
+  &__button {
     margin: 0px 0px 0px 36px;
-
-    height: 32px;
     padding: 0px 18px;
+    height: 32px;
 
-    border-radius: 4px;
-
-    color: #fff;
     background-color: #934cce5e;
-    border: 1px solid transparent;
-    border-color: #623686;
-
-    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s, transform 0.3s ease 0s;
 
     svg~svg {
       margin: 0px 0px 0px rem(3);

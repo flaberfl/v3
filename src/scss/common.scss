@@ -1,56 +1,23 @@
 // Заголовки, общие БЄМ блоки и проче...
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: rem(6) rem(12);
 
-.wave {
-  animation-name: wave-animation;
+  line-height: 1.5;
+  color: #fff;
 
-  animation-duration: 2.1s;
-
-  animation-iteration-count: infinite;
-
-  transform-origin: 70% 70%;
-
-  display: inline-block;
-
-  font-size: rem(38);
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(14deg);
-  }
-
-  20% {
-    transform: rotate(-8deg);
-  }
-
-  30% {
-    transform: rotate(14deg);
-  }
-
-  40% {
-    transform: rotate(-4deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  60% {
-    transform: rotate(0deg);
-  }
-
-  /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  background-color: $bg-btn;
+  border-color: $bg-btn;
+  transition: all 0.3s ease 0s;
 }
 
 .title {
-  font-size: 2.6em;
+  font-size: 2.3em;
+  font-weight: 500;
   text-align: center;
 }
 

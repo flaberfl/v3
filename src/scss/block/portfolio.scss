@@ -1,0 +1,117 @@
+.page {
+
+  /* .page__portfolio */
+  &__portfolio {}
+}
+
+.portfolio {
+  @include adaptiveValue("padding-top", 80, 20);
+  @include adaptiveValue("padding-bottom", 80, 20);
+
+  background: $section-background-color-revers;
+
+
+  /* .portfolio__container */
+  &__container {}
+
+  /* .portfolio__title */
+  &__title {}
+
+  &__subtitle {
+    margin: 0px 0px rem(64) 0px;
+
+    text-align: center;
+  }
+
+  /* .portfolio__body */
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+
+
+
+    // @include adaptiveValue("row-gap", 90, 20);
+    // @include adaptiveValue("column-gap", 50, 20);
+
+    @media (max-width:$tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* .portfolio__project */
+  &__project {}
+}
+
+.project {
+  position: relative;
+  z-index: 100;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+
+  word-wrap: break-word;
+  overflow: hidden;
+
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  border-radius: 4px;
+  opacity: .9;
+  transition: all .5s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0 4px 4px 5px rgba(129, 72, 144, .561);
+      overflow: hidden;
+
+      transform: scale(1.02);
+    }
+  }
+
+
+  /* .project__image */
+  &__image {
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    opacity: 0.8;
+    // border-radius: 10px;
+    border-color: 1px solid white;
+  }
+
+  /* .project__content */
+  &__content {
+    margin: 0px 0px 24px 0px;
+    flex: 1 1 auto;
+
+    text-align: center;
+  }
+
+  /* .project__title */
+  &__title {
+    margin: 0px 0px 10px 0px;
+
+    font-size: 20px;
+  }
+
+  /* .project__text */
+  &__text {
+    font-weight: 500;
+    text-align: justify;
+
+    @media (max-width:$tablet) {
+      font-size: rem(14);
+    }
+  }
+
+  /* .project__link */
+  &__link {
+    align-self: center;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $bg-btn-hv;
+        border-color: $bg-btn-hv;
+      }
+    }
+  }
+}

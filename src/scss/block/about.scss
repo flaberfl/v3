@@ -11,8 +11,8 @@
     align-items: center;
     margin: 0px 0px rem(57) 0px;
 
-    @media (max-width:$mobile){
-       flex-direction: column; 
+    @media (max-width:$mobile) {
+      flex-direction: column;
     }
   }
 
@@ -20,14 +20,16 @@
   &__content {
     flex: 0 1 65%;
 
-    @media (max-width:$mobile){
-       margin: 0px 0px rem(30) 0px; 
+    @media (max-width:$mobile) {
+      margin: 0px 0px rem(30) 0px;
     }
   }
 
   /* .about__title */
   &__title {
     margin: 0px 0px rem(53) 0px;
+
+    font-size: 2.6em;
   }
 
   /* .about__text */
@@ -57,8 +59,8 @@
 
   /* .social__title */
   &__title {
+    font-size: 2.6em;
     letter-spacing: -1px;
-
   }
 
   /* .social__subtitle */

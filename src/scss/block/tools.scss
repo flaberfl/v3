@@ -1,6 +1,6 @@
 .tools {
   @include adaptiveValue("padding-top", 40, 10);
-  @include adaptiveValue("padding-bottom", 40, 10);
+  @include adaptiveValue("padding-bottom", 50, 10);
   background: $section-background-color;
 
   /* .tools__container */
@@ -11,7 +11,6 @@
     margin: 0px 0px 17px 0px;
 
     font-size: 2.3em;
-    font-weight: 500;
   }
 
   /* .tools__body */

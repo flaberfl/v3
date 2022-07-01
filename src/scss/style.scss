@@ -24,6 +24,8 @@ $mainColor: #000; // Цвет шрифта по умолчанию
 $imp-text-color: #c770f0;
 $header-menu-bg-pc: #1b1a2ea9;
 $header-menu-bg-mob: #181a27;
+$bg-btn: #623686;
+$bg-btn-hv: #6d20c5d7;
 
 $section-background-color: linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904));
 $section-background-color-revers: linear-gradient(to top left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904));
@@ -165,6 +167,7 @@ body {
 
 // Подключение стилей общих элементов проекта
 @import "common";
+@import "animation";
 
 // Подключение стилей отдельных блоков
 @import "header";
@@ -176,3 +179,4 @@ body {
 @import "block/operation";
 @import "block/skills";
 @import "block/tools";
+@import "block/portfolio";
